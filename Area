@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float radius,length,width,base,height;
+    
+    int choice;
+    cout<<"Enter your choice: ";
+    cin>>choice;
+    switch(choice)
+    {
+        case 1:
+        cout<<"Enter radius: ";
+        cin>>radius;
+        cout<<"area of circle: "<<3.14*radius*radius;
+        break;
+        case 2:
+        cout<<"Enter length and width: ";
+        cin>>length>>width;
+        cout<<"area of rectangle: "<<length*width;
+        break;
+        case 3:
+        cout<<"Enter base and height: ";
+        cin>>base>>height;
+        cout<<"area of triangle: "<<0.5*base*height;
+        break;
+        default: cout<<"Invalid choice";
+        break;
+    }
+}
